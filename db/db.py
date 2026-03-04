@@ -23,12 +23,17 @@ from utils.logging import log, debug, error
 # ============================================================
 # ===================== PATH CONFIGURATION ===================
 # ============================================================
+from pathlib import Path
+
+# ensure data directory exists
+DATA_DIR = Path("data")
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # location of SQLite database file
-DB_PATH = os.path.join("data", "ocr_data.db")
+DB_PATH = DATA_DIR / "ocr_data.db"
 
 # schema file used to create tables
-SCHEMA_PATH = os.path.join("db", "schema.sql")
+SCHEMA_PATH = Path("db") / "schema.sql"
 
 
 # ============================================================
@@ -43,7 +48,7 @@ def connect(db_path=DB_PATH):
 
     log(f"Connecting to database: {db_path}")
 
-    return sqlite3.connect(db_path)
+    return sqlite3.connect(str(db_path))
 
 
 # ============================================================
