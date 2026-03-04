@@ -1,0 +1,31 @@
+{
+  "template_id": "student",
+  "fields": {
+    "sid": {
+      "type": "string",
+      "extract": {
+        "method": "regex",
+        "pattern": "\\d{8}"
+      }
+    },
+    "name": {
+      "type": "string",
+      "extract": {
+        "method": "bbox_region",
+        "bbox": [
+          0.19923371647509577,
+          0.27663230240549824,
+          0.39846743295019155,
+          0.3213058419243986
+        ]
+      }
+    },
+    "gpa": {
+      "type": "float",
+      "extract": {
+        "method": "label_nearby",
+        "label": "GPA"
+      }
+    }
+  }
+}

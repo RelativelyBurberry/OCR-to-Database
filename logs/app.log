@@ -1,137 +1,20 @@
-[17:47:32] Image loaded: C:/Users/Nipun/Desktop/VIT/0. Projects/OCRApp/image.png
-[17:47:34] Starting OCR process
-[17:47:34] [DEBUG] Using template: cgpa
-[17:47:34] Loading template: cgpa
-[17:47:34] Starting OCR process for image: C:/Users/Nipun/Desktop/VIT/0. Projects/OCRApp/image.png
-[17:47:35] Running bbox OCR extraction
-[17:47:35] [DEBUG] Running OCR preprocessing
-[17:47:35] [DEBUG] OCR result: HRISHIKESH DAMODAR NAYAK
+[18:13:53] Starting OCR process
+[18:13:53] [DEBUG] Using template: student
+[18:13:53] Loading template: student
+[18:13:53] Starting OCR process for image: C:/Users/Nipun/Desktop/VIT/0. Projects/OCRApp/image.png
+[18:13:53] [DEBUG] Processing field 'sid' using method 'regex'
+[18:13:53] [DEBUG] Running regex extraction with pattern: \d{8}
+[18:13:53] [DEBUG] Regex match found: 12345678
+[18:13:53] [DEBUG] Field 'sid' -> 12345678
+[18:13:53] [DEBUG] Processing field 'name' using method 'bbox_region'
+[18:13:53] Running bbox OCR extraction
+[18:13:54] [DEBUG] BBOX crop: (175, 270, 350, 314)
+[18:13:54] [DEBUG] Running OCR preprocessing
+[18:13:54] [DEBUG] OCR result: John Doe
 
-[17:47:35] Running bbox OCR extraction
-[17:47:35] [DEBUG] Running OCR preprocessing
-[17:47:35] [DEBUG] OCR result: 24BDS1007
-
-[17:47:35] Running bbox OCR extraction
-[17:47:35] [DEBUG] Running OCR preprocessing
-[17:47:35] [DEBUG] OCR result: 8.89
-
-[17:47:35] OCR processing completed
-[17:47:35] OCR processing completed
-[17:47:37] Saving OCR results to database
-[17:47:37] Connecting to database: data\ocr_data.db
-[17:47:37] Initializing database schema
-[17:47:37] [DEBUG] Executing schema SQL
-[17:47:37] Database initialized successfully
-[17:47:37] Inserting record for template: cgpa
-[17:47:37] [DEBUG] Record inserted successfully
-[17:47:37] Database save successful
-[17:48:19] Starting OCR Application
-[17:48:19] Starting OCR Application UI
-[17:48:19] Loading template list
-[17:48:19] [DEBUG] Templates found: ['cgpa', 'pp']
-[17:48:19] [DEBUG] 2 templates loaded
-[17:48:22] Opening template editor
-[17:48:22] Opening Template Editor
-[17:48:30] Starting OCR Application
-[17:48:31] Starting OCR Application UI
-[17:48:31] Loading template list
-[17:48:31] [DEBUG] Templates found: ['cgpa']
-[17:48:31] [DEBUG] 1 templates loaded
-[17:48:33] Opening template editor
-[17:48:33] Opening Template Editor
-[17:48:38] Template editor image selected: C:/Users/Nipun/Desktop/VIT/0. Projects/OCRApp/image.png
-[17:48:38] Template editor image loaded: C:/Users/Nipun/Desktop/VIT/0. Projects/OCRApp/image.png
-[17:48:41] [DEBUG] Bounding box drawn: PySide6.QtCore.QRect(11, 107, 128, 43)
-[17:48:41] Opening Field Configuration Dialog
-[17:48:59] [DEBUG] Extractor switched to regex
-[17:49:15] [DEBUG] Added literal segment: 24BDS
-[17:49:15] [DEBUG] Built regex: 24BDS
-[17:49:15] [DEBUG] Regex matches found: ['24BDS']
-[17:49:21] [DEBUG] Added segment digit x4
-[17:49:21] [DEBUG] Built regex: 24BDS\d{4}
-[17:49:21] [DEBUG] Regex matches found: ['24BDS1007']
-[17:49:50] [DEBUG] Bounding box drawn: PySide6.QtCore.QRect(7, 104, 130, 47)
-[17:49:50] Opening Field Configuration Dialog
-[17:49:54] [DEBUG] Extractor switched to regex
-[17:49:59] [DEBUG] Added segment digit x5
-[17:49:59] [DEBUG] Built regex: \d{5}
-[17:50:05] [DEBUG] Bounding box drawn: PySide6.QtCore.QRect(10, 103, 132, 52)
-[17:50:05] Opening Field Configuration Dialog
-[17:50:09] [DEBUG] Extractor switched to regex
-[17:50:14] [DEBUG] Added literal segment: 24BDS
-[17:50:14] [DEBUG] Built regex: 24BDS
-[17:50:14] [DEBUG] Regex matches found: ['24BDS']
-[17:50:18] [DEBUG] Added segment digit x5
-[17:50:18] [DEBUG] Built regex: 24BDS\d{5}
-[17:55:39] Starting OCR Application
-[17:55:39] Starting OCR Application UI
-[17:55:39] [ERROR] Application failed to start: OCRApp.showMaximized() takes no arguments (2 given)
-[17:55:43] Starting OCR Application
-[17:55:43] Starting OCR Application UI
-[17:55:43] [ERROR] Application failed to start: OCRApp.showMaximized() takes no arguments (2 given)
-[17:56:01] Starting OCR Application
-[17:56:01] Starting OCR Application UI
-[17:56:02] Loading template list
-[17:56:02] [DEBUG] Templates found: ['cgpa']
-[17:56:02] [DEBUG] 1 templates loaded
-[17:57:51] Starting OCR Application
-[17:57:51] Starting OCR Application UI
-[17:57:51] Loading template list
-[17:57:51] [DEBUG] Templates found: ['cgpa']
-[17:57:51] [DEBUG] 1 templates loaded
-[17:57:54] Opening template editor
-[17:57:54] Opening Template Editor
-[17:57:58] Image loaded: C:/Users/Nipun/Desktop/VIT/0. Projects/OCRApp/image.png
-[17:58:24] Starting OCR Application
-[17:58:24] Starting OCR Application UI
-[17:58:24] Loading template list
-[17:58:24] [DEBUG] Templates found: ['cgpa']
-[17:58:24] [DEBUG] 1 templates loaded
-[17:58:30] Image loaded: C:/Users/Nipun/Desktop/VIT/0. Projects/OCRApp/image.png
-[17:58:39] Starting OCR Application
-[17:58:39] Starting OCR Application UI
-[17:58:39] Loading template list
-[17:58:39] [DEBUG] Templates found: []
-[17:58:39] [DEBUG] 0 templates loaded
-[17:58:44] Image loaded: C:/Users/Nipun/Desktop/VIT/0. Projects/OCRApp/image.png
-[17:58:45] Opening template editor
-[17:58:45] Opening Template Editor
-[17:58:47] Template editor image selected: C:/Users/Nipun/Desktop/VIT/0. Projects/OCRApp/image.png
-[17:58:47] Template editor image loaded: C:/Users/Nipun/Desktop/VIT/0. Projects/OCRApp/image.png
-[17:58:53] [DEBUG] Bounding box drawn: PySide6.QtCore.QRect(271, 159, 213, 33)
-[17:58:53] Opening Field Configuration Dialog
-[17:58:59] [DEBUG] Extractor switched to regex
-[17:59:05] [DEBUG] Added segment digit x8
-[17:59:05] [DEBUG] Built regex: \d{8}
-[17:59:05] [DEBUG] Regex matches found: ['12345678']
-[17:59:06] Generating field configuration
-[17:59:06] [DEBUG] Built regex: \d{8}
-[17:59:06] Field created: student_id
-[17:59:11] [DEBUG] Bounding box drawn: PySide6.QtCore.QRect(35, 160, 188, 30)
-[17:59:11] Opening Field Configuration Dialog
-[17:59:17] [DEBUG] Extractor switched to label_nearby
-[17:59:20] Generating field configuration
-[17:59:20] Field created: name
-[17:59:24] [DEBUG] Bounding box drawn: PySide6.QtCore.QRect(340, 501, 145, 46)
-[17:59:24] Opening Field Configuration Dialog
-[17:59:32] [DEBUG] Extractor switched to label_nearby
-[17:59:36] Generating field configuration
-[17:59:36] Field created: gpa
-[17:59:37] Saving template
-[17:59:37] [ERROR] Template save failed: missing template name
-[17:59:45] Saving template
-[17:59:45] Template saved: configs\templates\student.json
-[17:59:45] Reloading templates
-[17:59:45] Loading template list
-[17:59:45] [DEBUG] Templates found: ['student']
-[17:59:45] [DEBUG] 1 templates loaded
-[17:59:47] Starting OCR process
-[17:59:47] [DEBUG] Using template: student
-[17:59:47] Loading template: student
-[17:59:47] Starting OCR process for image: C:/Users/Nipun/Desktop/VIT/0. Projects/OCRApp/image.png
-[17:59:47] [DEBUG] Running regex extraction with pattern: \d{8}
-[17:59:47] [DEBUG] Regex match found: 12345678
-[17:59:47] [DEBUG] Label match found in line: Name: John Doe Student ID: 12345678
-[17:59:47] [DEBUG] Label match found in line: Total Credits: 17 GPA: 3.78
-[17:59:47] OCR processing completed
-[17:59:47] OCR processing completed
+[18:13:54] [DEBUG] Field 'name' -> John Doe
+[18:13:54] [DEBUG] Processing field 'gpa' using method 'label_nearby'
+[18:13:54] [DEBUG] Label match found in line: Total Credits: 17 GPA: 3.78
+[18:13:54] [DEBUG] Field 'gpa' -> 3.78
+[18:13:54] OCR processing completed
+[18:13:54] OCR processing completed
